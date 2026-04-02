@@ -15,12 +15,10 @@ class Calculator {
     }
 
     public function divide($a, $b) {
-        // BUG: No division by zero check
         return $a / $b;
     }
 
     public function average($numbers) {
-        // BUG: Wrong logic (sum not initialized, count issue)
         foreach ($numbers as $num) {
             $sum += $num;
         }
